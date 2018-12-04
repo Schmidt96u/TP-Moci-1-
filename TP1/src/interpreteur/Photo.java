@@ -17,6 +17,8 @@ public class Photo extends Media {
                 ", nom='" + nom + '\'' +
                 '}';
     }
-
-
+    @Override
+    public int getNombredePhotos(){
+        return(1);
+    }
 }

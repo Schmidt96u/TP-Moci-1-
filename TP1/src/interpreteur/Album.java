@@ -12,13 +12,11 @@ public class Album extends Media implements Iterable<Media>{
     public Album(int d, String nom) {
         super(d, nom);
         this.als = new ArrayList<>(10);
-        this.nombre=0;
     }
 
     public void ajouter(Media... s) {
         for (Media sc : s) {
             this.als.add(sc);
-            this.nombre++;
         }
     }
 
@@ -33,7 +31,16 @@ public class Album extends Media implements Iterable<Media>{
     public Iterator<Media> iterator() {
         return this.als.iterator();
     }
-    public  int getNombreDePhotos() {
-        return (nombre);
+    @Override
+    public  int getNombredePhotos() {
+        Iterator test = als.iterator();
+        int a;
+        a=0;
+
+        while(test.hasNext()){
+         a += ((Photo)(test.next())).getNombredePhotos();
+
+        }
+        return(a);
     }
 }

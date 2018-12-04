@@ -8,5 +8,5 @@ public abstract class Media {
         this.annee = a;
         this.nom = nom;
     }
-
+    abstract int getNombredePhotos();
 }
