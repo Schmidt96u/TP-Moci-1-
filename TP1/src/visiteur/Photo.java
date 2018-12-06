@@ -17,4 +17,8 @@ public class Photo extends Media {
                 ", nom='" + nom + '\'' +
                 '}';
     }
+    @Override
+    public int accept(Visitor v) {
+       return( v.visit(this));
+    }
 }

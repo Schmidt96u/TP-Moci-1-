@@ -21,4 +21,10 @@ public class Photo extends Media {
     public int getNombredePhotos(){
         return(1);
     }
+    public void getVideoMp4(){
+        System.out.print("not a video");
+    }
+    public void getArticleAuteur(String Auteur){
+        System.out.print("not a Article");
+    }
 }

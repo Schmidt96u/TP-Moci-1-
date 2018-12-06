@@ -42,5 +42,13 @@ public class Album extends Media implements Iterable<Media>{
 
         }
         return(a);
+
     }
+    public void getVideoMp4(){
+        System.out.print("not a video");
+    }
+    public void getArticleAuteur(String Auteur){
+        System.out.print("not a Article");
+    }
+
 }
