@@ -9,10 +9,10 @@ public abstract class Media {
         this.annee = a;
         this.nom = nom;
     }
+    protected Media(String auteur) {
+            this.auteur = auteur;
+        }
 
-    protected Media( String auteur) {
-        this.auteur = auteur;
-    }
+    abstract void accept(Visiteur V);
 
-       abstract void accept(Visiteur V);
 }

@@ -17,3 +17,4 @@ public class Video extends Media {
         v.visit(this);
     }
 }
+

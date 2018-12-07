@@ -29,10 +29,9 @@ public class Album extends Media implements Iterable<Media> {
         return this.als.iterator();
     }
 
-
-
     public void accept(Visiteur v) {
         v.visit(this);
     }
 
 }
+

@@ -17,6 +17,7 @@ public class Photo extends Media {
                 ", nom='" + nom + '\'' +
                 '}';
     }
+
     public void accept(Visiteur v){
         v.visit(this);
     }

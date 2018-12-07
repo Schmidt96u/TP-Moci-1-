@@ -39,4 +39,3 @@ public class Article extends Media {
     }
 }
 
-
