@@ -1,5 +1,6 @@
 package visiteur;
 
+
 public class Main {
     public static void main(String[] args) {
         Album al = new Album(2018, "Album Senja");
@@ -9,8 +10,7 @@ public class Main {
         al.ajouter(p1, p2, p3);
 
         String res = "Album{als=[Photo{auteur='JMP', annee=2018, nom='Aurore Boréale'}, Photo{auteur='JMP', annee=2018, nom='Trek'}, Photo{auteur='SM', annee=2018, nom='Fjord'}]}";
-        assert (al.toString().equals(res)) : "Bug" ;
-
-
+        VisitNbPhotos v= new VisitNbPhotos();
+        System.out.print(v.getNombrePhoto(al));
     }
 }

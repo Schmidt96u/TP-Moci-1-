@@ -1,5 +1,6 @@
 package interpreteur;
 
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class Main {
 
         String res = "Album{als=[Photo{auteur='JMP', annee=2018, nom='Aurore Boréale'}, Photo{auteur='JMP', annee=2018, nom='Trek'}, Photo{auteur='SM', annee=2018, nom='Fjord'}]}";
         assert (al.toString().equals(res)) : "Bug" ;
-
-
+        //int A= al.getNombreDePhotos();
+       // System.out.println(A);
     }
 }
