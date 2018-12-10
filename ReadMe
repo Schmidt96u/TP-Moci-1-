@@ -1,0 +1,3 @@
+5) Ici le visiteur regarde l'objet mais, on se contente d'observer alors que l'interpreteur remonte l'objet entier
+8) le promblème ici pour le le design pattern type visiteur car on regarde l'objet. on n'y accède jamais, on ne peut pas le modifier, donc pas le supprimé par conséquent.
+Pour le résoudre il faut creer une partie "controleur" qui passe par une méthode plus dans le design interpreteur qui permet dez remonter les objets.
